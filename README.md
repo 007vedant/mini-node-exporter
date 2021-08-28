@@ -1,5 +1,5 @@
 # mini-node-exporter ✨
-This application is a task for Project Chaos Mesh for Linux Foundation Mentorship Program 2021.
+This application is a task for **CNCF - Chaos Mesh: Monitoring Metrics about Chaos Mesh** for Linux Foundation Mentorship Program 2021.
 
 ## Tech Stack 📦️
 1. Python
