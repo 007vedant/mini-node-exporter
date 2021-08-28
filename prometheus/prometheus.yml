@@ -1,0 +1,7 @@
+scrape_configs:
+  - job_name: mini-node-exporter
+    metrics_path: /metrics
+    static_configs:
+      - targets:
+        - 172.17.0.2:23333
+
