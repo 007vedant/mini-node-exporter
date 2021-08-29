@@ -40,7 +40,7 @@ This application is a task for **CNCF - Chaos Mesh: Monitoring Metrics about Cha
     `sudo docker-compose up -d`
 6. Now your Prometheus client and Grafana are up & running and ready for use. Go to `localhost:9090` to access Prometheus client & to `localhost:3000` to access your Grafana dashboard.
 7. Inside your Grafana window, login using `admin` as username and password. Once you're in, click on the `mini-node-exporter-lfx` dashboard to see the `node_load` && `node_time` metrics in graphical format. You could also go to *explore* section and write different PromQL queries and visualize the results.
-8. Insde your Prometheus window, write `{job="mini-node-exporter"}` query to see all the metrics being scraped by Prometheus. You could also perform various PromQL queries or visualize metrics in Graphs section.
+8. Inside your Prometheus window, write `{job="mini-node-exporter"}` query to see all the metrics being scraped by Prometheus. You could also perform various PromQL queries or visualize metrics in Graphs section.
 9. Finally, you can kill the process by running the following command.
     
     `sudo docker-compose down -v`
