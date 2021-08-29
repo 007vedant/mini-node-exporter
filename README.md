@@ -1,6 +1,12 @@
 # mini-node-exporter ✨
 This application is a task for **CNCF - Chaos Mesh: Monitoring Metrics about Chaos Mesh** for Linux Foundation Mentorship Program 2021.
 
+## Task Stats
+1. **Goal 1**: Build web application and expose required endpoints. ✔️
+2. **Optional Bonus 1**: Publish image on Docker Hub and create Dockerfile. ✔️
+3. **Goal 2**: Provide monitoring stack of Prometheus and Grafana dashboard. ✔️
+4. **Optional BOnus 2**: Orchestrate the monitoring stack via Docker compose. ✔️
+
 ## Tech Stack 📦️
 1. Python
 2. Flask
