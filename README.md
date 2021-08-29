@@ -27,14 +27,14 @@ This application is a task for **CNCF - Chaos Mesh: Monitoring Metrics about Cha
 2. After the image is created, run the docker image and expose the application to port: 23333 of the docker container.
     
     `sudo docker run --name mini-node-exporter-app -p 23333:23333 mini-node-exporter-app`
-3. The flask app is up & running now. Open url provided in shell: mostly `http://172.17.0.2:23333`. The localhost of your linux machine defaults to this url inside the container. Open two different terminals and enter this command to setup a watch at `\info\uptime` && `info\load` endpoints.
+3. The flask app is up & running now. Open url provided in shell: mostly `http://172.17.0.2:23333`. The localhost of your linux machine defaults to this url inside the container. Open two different terminals and enter this command to setup a watch at `/info/uptime` && `info/load` endpoints.
     
     ```
     1. watch -n 1 "curl localhost:23333/info/uptime"
     2. watch -n 1 "curl localhost:23333/info/load"
     ```
-3. All the endpoints exposed by the Flask application: `\metrics | \info | \info\hostname | \info\load | \info\uptime`    
-4. Browse through different endpoints of `http://172.17.0.2:23333`. Hit `\metrics` endpoint to see all the metrics scraped by Prometheus. Among the other default metrics, you would see `node_uptime` && `node_load{duration="<time>"}` metrics.
+3. All the endpoints exposed by the Flask application: `/metrics | /info | /info/hostname | /info/load | /info/uptime`    
+4. Browse through different endpoints of `http://172.17.0.2:23333`. Hit `/metrics` endpoint to see all the metrics scraped by Prometheus. Among the other default metrics, you would see `node_uptime` && `node_load{duration="<time>"}` metrics.
 5. Once your flask app is up and working, cd back to project directory where `docker-compose.yml` is present. This compose file is responsible for launching Prometheus and Grafana. Run the following command to launch your dashboard.
     
     `sudo docker-compose up -d`
